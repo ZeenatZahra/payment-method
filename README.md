@@ -5,6 +5,7 @@ Provide payment methods that are available for the customer to pay for video pla
   - spring-boot-starter-web
   - spring-data-jpa
   - H2 database
+  - QueryDsl 
   - lombok
   
 # Database: 
@@ -18,9 +19,9 @@ Provide payment methods that are available for the customer to pay for video pla
 
 # 1. Get all payment method
 
-     This endpoint will return all the payment methods available. And also filtering on name is provided.
+     This endpoint will return all the payment methods available. And also filtering on name or id (plan id) is provided.
      
-     Method GET http://localhost/api/v1.0/configuration/payment-methods?name='some-method-name'
+     Method GET http://localhost/api/v1.0/configuration/payment-methods? name='some-method-name' OR id=1
      
 # 2. Adding a new payment method
 
